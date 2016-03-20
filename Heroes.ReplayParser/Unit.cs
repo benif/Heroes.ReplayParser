@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Drawing;
 
 namespace Heroes.ReplayParser
 {
@@ -20,6 +21,7 @@ namespace Heroes.ReplayParser
         public Point PointDied { get; set; }
         public List<Position> Positions { get; set; } = new List<Position>();
         public List<OwnerChangeEvent> OwnerChangeEvents { get; set; } = new List<OwnerChangeEvent>();
+		public Image Portrait { get; set; }
 
         public override string ToString()
         {
